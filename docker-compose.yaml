@@ -1,0 +1,13 @@
+services:
+  kali:
+    build: .
+    container_name: kali
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    environment:
+      - USER=${USER:-kali}
+    volumes:
+      - ./user:/home/${USER:-kali}
+      - ./data:/data
+    restart: unless-stopped
