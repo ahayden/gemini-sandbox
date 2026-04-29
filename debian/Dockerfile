@@ -1,4 +1,4 @@
-FROM node:22-bullseye-slim
+FROM node:current-bullseye-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 make g++ curl git man-db dnsutils procps lsb-release \

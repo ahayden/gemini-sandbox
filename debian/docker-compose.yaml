@@ -1,9 +1,9 @@
 services:
   sandbox:
     build: .
-    image: localhost/gemini-sandbox:latest
+    image: localhost/gemini-sandbox-debian:latest
     pull_policy: never
-    container_name: gemini-sandbox
+    container_name: gemini-sandbox-debian
     stdin_open: true
     tty: true
     init: true

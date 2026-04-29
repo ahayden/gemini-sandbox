@@ -1,13 +1,16 @@
 services:
-  kali:
+  sandbox:
     build: .
-    container_name: kali
+    image: localhost/gemini-sandbox-kali:latest
+    pull_policy: never
+    container_name: gemini-sandbox-kali
     stdin_open: true
     tty: true
+    init: true
     network_mode: "host"
     environment:
       - USER=${USER:-kali}
     volumes:
       - ./user:/home/${USER:-kali}
       - ./data:/data
-    restart: unless-stopped
+      - ${PWD}:/workspace
