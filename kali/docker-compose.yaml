@@ -11,6 +11,4 @@ services:
     environment:
       - USER=${USER:-kali}
     volumes:
-      - ./user:/home/${USER:-kali}
-      - ./data:/data
       - ${PWD}:/workspace
