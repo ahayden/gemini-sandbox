@@ -1,18 +1,8 @@
 
 ```bash
+cat ~/.gemini/.env
+export GEMINI_API_KEY="TODO"
 export GEMINI_SANDBOX=docker
-export GEMINI_SANDBOX_IMAGE=localhost/gemini-sandbox:latest
-docker compose build
+export GEMINI_SANDBOX_IMAGE=localhost/gemini-sandbox-debian:latest
 ```
 
-~/.gemini/settings.json
-```json
-{
-  "tools": {
-    "sandbox": "docker",
-    "docker": {
-      "image": "localhost/gemini-sandbox:latest"
-    }
-  }
-}
-```
