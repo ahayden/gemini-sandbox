@@ -15,6 +15,8 @@ RUN mkdir -p /usr/local/share/npm-global && \
 WORKDIR /workspace
 USER node
 
+ADD .mcp.json /workspace/.mcp.json
+
 RUN npm install -g @google/gemini-cli@latest
 
 CMD ["/bin/bash"]

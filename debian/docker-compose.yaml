@@ -9,4 +9,7 @@ services:
     init: true
     network_mode: "host"
     volumes:
-      - ${PWD}:/workspace
+      - workspace-data:/workspace
+
+volumes:
+  workspace-data:
