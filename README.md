@@ -5,12 +5,12 @@
 
 ### Build for Gemini sandbox
   - `docker compose build`
-  - Set ~/.gemini/.env parameters
+  - Set ~/.antigravity/.env parameters
 
 ### Inside Kali VM
   - Run the gemini sandbox inside the Kali VM, with Kali serving MCP:
     - Use the debian sandbox
-    - Set the Kali MCP server in .gemini/settings.json
+    - Set the Kali MCP server in .antigravity/settings.json
 ```    
 {
   "security": {
